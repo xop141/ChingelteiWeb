@@ -21,7 +21,7 @@ const page = () => {
           аюулгүй орчныг бүрдүүлэхэд хувь нэмэр оруулах.
         </p>
 
-        <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4 text-center">
           Тэргүүлэх чиглэл:
         </h2>
 
