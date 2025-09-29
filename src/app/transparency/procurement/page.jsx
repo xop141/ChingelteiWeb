@@ -1,4 +1,5 @@
 "use client";
+import Table from './Table'
 import React from "react";
 import { Download } from "lucide-react";
 
@@ -9,11 +10,8 @@ const page = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-10 font-sans">
-      <h1 className="text-3xl font-bold text-gray-800 mb-10 border-b pb-4">
-        Татаж авах
-      </h1>
-
+    <div className="p-10 font-sans">
+      <Table/>
       <div className="bg-white border rounded-2xl shadow-sm hover:shadow-md transition p-8 flex flex-col items-center">
         {/* PDF Icon */}
         <div className="w-20 h-20 bg-red-100 text-red-600 flex items-center justify-center rounded-xl mb-6">
@@ -40,3 +38,9 @@ const page = () => {
 };
 
 export default page;
+
+
+
+
+
+
