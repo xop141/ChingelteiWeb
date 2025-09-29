@@ -48,7 +48,7 @@ const HumanResourceStrategy = () => {
            {/* Download Button */}
       <div className="mt-8 flex justify-center">
         <a
-          href="/public/Сургалттөлөвлөгөө.pdf" 
+          href="/files/Сургалттөлөвлөгөө.pdf" 
           download
           className="bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-blue-800 transition-colors"
         >
