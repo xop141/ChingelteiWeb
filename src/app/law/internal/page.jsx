@@ -5,19 +5,19 @@ const page = () => {
   const files = [
     {
       name: "Ажил үнэлгээний журам",
-      url: "files/unelgee.pdf",
+      url: "/files/unelgee.pdf",
     },
     {
       name: "Ажилтан сонгон шалгаруулах журам",
-      url: "files/songon.pdf",
+      url: "/files/songon.pdf",
     },
     {
       name: "Хүний нөөцийн стратеги үнэлэх журам",
-      url: "files/strat.pdf",
+      url: "/files/strat.pdf",
     },
     {
       name: "Төрийн захиргааны болон үйлчилгээний албан тушаал эрхэлдэг төрийн албан хаагчийн ёс зүйн хэм хэмжээ",
-      url: "files/yos.pdf",
+      url: "/files/yos.pdf",
     },
   ];
 
