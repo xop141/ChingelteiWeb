@@ -32,11 +32,9 @@ const orgData = {
   ],
 };
 
-const OrgChartNode = ({ title, children, color = "green-400" }) => (
+const OrgChartNode = ({ title, children }) => (
   <div className="flex flex-col items-center">
-    <div
-      className={`bg-${color} rounded-md p-4 shadow-md min-w-[180px] text-center`}
-    >
+    <div className="bg-gray-700 rounded-md p-4 shadow-md min-w-[180px] text-center">
       <div className="text-white font-bold">{title}</div>
     </div>
     {children && <div className="flex mt-4 gap-4">{children}</div>}
@@ -48,23 +46,15 @@ const page = () => {
     <div className="p-6 overflow-x-auto">
       <OrgChartNode title={orgData.title}>
         {orgData.departments.map((dept, idx) => (
-          <OrgChartNode
-            key={idx}
-            title={dept.name}
-            color="green-600"
-          >
+          <OrgChartNode key={idx} title={dept.name}>
             {dept.roles.map((role, rIdx) => (
-              <OrgChartNode
-                key={rIdx}
-                title={role.title}
-                color="blue-500"
-              >
+              <OrgChartNode key={rIdx} title={role.title}>
                 {role.subRoles.length > 0 && (
                   <div className="flex flex-col mt-2 gap-2">
                     {role.subRoles.map((sub, sIdx) => (
                       <div
                         key={sIdx}
-                        className="bg-blue-300 p-2 rounded text-center shadow-sm min-w-[160px]"
+                        className="bg-gray-400 p-2 rounded text-center shadow-sm min-w-[160px]"
                       >
                         {sub}
                       </div>

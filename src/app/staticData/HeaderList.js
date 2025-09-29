@@ -1,6 +1,6 @@
 const HeaderList = {
   "БИДНИЙ ТУХАЙ": [
-    { label: "Танилцуулга", href: "/about/intro" },
+    { label: "Чиг үүрэг", href: "/about/intro" },
     { label: "Алсын хараа, эрхэм зорилго", href: "/about/vision" },
     { label: "Стратеги, зорилго", href: "/about/strategy" },
     { label: "Бүтэц", href: "/about/structure" },
