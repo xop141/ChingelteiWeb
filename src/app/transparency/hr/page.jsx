@@ -31,6 +31,7 @@ const HumanResourceStrategy = () => {
         ))}
       </div>
 
+ 
       {/* Source Section */}
       <div className="mt-12 bg-gray-50 rounded-2xl p-6 border border-gray-200">
         <h2 className="text-lg font-semibold text-gray-800 mb-4">
@@ -44,6 +45,17 @@ const HumanResourceStrategy = () => {
           ))}
         </ul>
       </div>
+           {/* Download Button */}
+      <div className="mt-8 flex justify-center">
+        <a
+          href="/public/Сургалттөлөвлөгөө.pdf" 
+          download
+          className="bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-blue-800 transition-colors"
+        >
+          Сургалтын Төлөвлөгөө татах
+        </a>
+      </div>
+
     </div>
   );
 };

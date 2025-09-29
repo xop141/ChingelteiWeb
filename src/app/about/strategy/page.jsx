@@ -28,7 +28,7 @@ const StrategyContent = () => {
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold mt-4">Тэргүүлэх чиглэл:</h3>
+        <h3 className="text-xl font-semibold mt-4 text-center">Тэргүүлэх чиглэл:</h3>
         <ol className="list-decimal list-inside space-y-2 mt-2">
           <li>
             Нийтийн аюулгүй байдлыг хангах
