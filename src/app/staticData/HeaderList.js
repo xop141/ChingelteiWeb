@@ -23,7 +23,8 @@ const HeaderList = {
       label: "Хүний нөөцийн ил тод байдал",
       href: "/transparency/hr",
       children: [
-        { label: "Сул орон тоо", href: "/transparency/hr/vacancy" },
+        { label: "Албан тушаалын тодорхойлолт", href: "/files/alban-tushaaliin-todorhoilolt.pdf", download: true },
+        { label: "Сул орон тоо", href: "/transparency/hr/vacancy" }
       ],
     },
     { label: "Төсөв, санхүүгийн ил тод байдал", href: "/transparency/budget" },

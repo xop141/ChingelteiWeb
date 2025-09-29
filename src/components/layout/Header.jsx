@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import HeaderList from "@/app/staticData/HeaderList";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import HeaderList from "@/app/staticData/HeaderList";
 
 const Header = () => {
   const currentPath = usePathname();
@@ -51,7 +51,15 @@ const Header = () => {
                 {subItems.map((item, subIndex) =>
                   item.label ? (
                     <li key={subIndex} className="relative group">
-                      {item.href.startsWith("http") ? (
+                      {item.download ? (
+                        <a
+                          href={item.href}
+                          download
+                          className="block px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                        >
+                          {item.label}
+                        </a>
+                      ) : item.href.startsWith("http") ? (
                         <a
                           href={item.href}
                           target="_blank"
@@ -77,9 +85,19 @@ const Header = () => {
                               key={childIndex}
                               className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
                             >
-                              <Link href={child.href} className="block w-full">
-                                {child.label}
-                              </Link>
+                              {child.download ? (
+                                <a
+                                  href={child.href}
+                                  download
+                                  className="block w-full"
+                                >
+                                  {child.label}
+                                </a>
+                              ) : (
+                                <Link href={child.href} className="block w-full">
+                                  {child.label}
+                                </Link>
+                              )}
                             </li>
                           ))}
                         </ul>
