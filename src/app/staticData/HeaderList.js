@@ -19,7 +19,13 @@ const HeaderList = {
     { label: "Камерыг арчлах", href: "/statistics/maintenance" },
   ],
   "ИЛ ТОД БАЙДАЛ": [
-    { label: "Хүний нөөцийн ил тод байдал", href: "/transparency/hr" },
+  {
+      label: "Хүний нөөцийн ил тод байдал",
+      href: "/transparency/hr",
+      children: [
+        { label: "Сул орон тоо", href: "/transparency/hr/vacancy" },
+      ],
+    },
     { label: "Төсөв, санхүүгийн ил тод байдал", href: "/transparency/budget" },
     { label: "Худалдан авах ажиллагааны ил тод байдал", href: "/transparency/procurement" },
     { label: "Тайлан", href: "/transparency/report" },

@@ -8,7 +8,7 @@ const page = () => {
     <div className="min-h-screen bg-gray-50">
       <main className="max-w-5xl mx-auto px-6 py-12">
         <h1 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-          Танилцуулга
+          Чиг үүрэг
         </h1>
 
         <ol className="list-decimal list-inside space-y-6 text-gray-800">
